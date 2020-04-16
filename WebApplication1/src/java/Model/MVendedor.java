@@ -9,6 +9,6 @@ package Model;
  *
  * @author Christian
  */
-public class VendedorBean {
+public class MVendedor {
     
 }

@@ -12,12 +12,11 @@ and open the template in the editor.
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     </head>
     <body>
-        <div class="container">
-            <br /><br />
+        <div class="container">            
             <h3>Nuevo Cliente</h3>
             <hr />
 
-            <form action="RegistrarCliente" method="post">
+            <form action="SCliente" method="post">
                 <div class="form-group col-md-6">
                     Nombres y Apellidos:
                     <input type="text" name="txtNombre" class="form-control" placeholder="Ingrese Nombre completo" />
@@ -38,14 +37,11 @@ and open the template in the editor.
                     Credito:
                     <input type="text" name="txtCredito" class="form-control" placeholder="Ingrese credito" />
                 </div>
-                <div class="form-group col-md-6">
-
-                    <input type="submit" value="Registrar" class="btn btn-success" />
-                    <input type="reset" value="Limpiar" class="btn btn-warning" />
+                <div class="form-group col-md-6">                                   
+                    <button class="btn btn-success" name="opc" value="registrar">Registrar</button>
                 </div>
-
             </form>
-            <a href="index.html" class="btn btn-link">Atras</a>
+            <a href="index.jsp" class="btn btn-link">Atras</a>
         </div>
     </body>
 </html>

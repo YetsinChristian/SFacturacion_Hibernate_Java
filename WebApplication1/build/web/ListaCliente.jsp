@@ -15,9 +15,11 @@
         </center>
    
         <div class="container">
-            <div class="form-group col-md-6">
-                <a class="btn btn-success" href="#">Nuevo Cliente</a>
-                <a class="btn btn-link" href="index.jsp">Menú Principal</a>
+            <div class="form-group col-md-6">                
+                <form method="post" action="SCliente">                    
+                    <button class="btn btn-success" type="submit" name="opc" value="nuevo">Nuevo Cliente</button>
+                    <a class="btn btn-link" href="index.jsp">Menú Principal</a>
+                </form>                
             </div>
             <table class="table">
                 <thead class ="thead-dark">
@@ -28,6 +30,7 @@
                         <th>Correo</th>
                         <th>Dirección</th>
                         <th>Credito</th>                   
+                        <th>Opciones</th>
                     </tr>
                 </thead>
                 <tbody>   
@@ -42,10 +45,15 @@
                             <td><%=list.getCliCor()%></td>
                             <td><%=list.getCliDir()%></td>
                             <td><%=list.getCliCre()%></td>                        
+                            <td>
+                                <form method="post" action="SCliente">                                    
+                                    <button class="btn btn-primary" type="submit" name="opc" value="editar">Editar</button>
+                                    <button class="btn btn-danger" type="submit" name="opc" value="eliminar">Eliminar</button>                                    
+                                    <input type="hidden" name="codigo" value="<%=list.getCliCod()%>">
+                                </form>
+                            </td>
                         </tr>
-                        <%
-                    }
-                    %>
+                        <%}%>
                 </tbody>
             </table>        
         </div>

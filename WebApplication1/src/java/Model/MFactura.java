@@ -1,6 +1,6 @@
 
 package Model;
 
-public class Factura {
+public class MFactura {
     
 }
