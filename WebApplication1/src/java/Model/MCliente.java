@@ -3,7 +3,6 @@ package Model;
 import HPOJO.Clientes;
 import HUtil.NewHibernateUtil;
 import java.util.List;
-import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;

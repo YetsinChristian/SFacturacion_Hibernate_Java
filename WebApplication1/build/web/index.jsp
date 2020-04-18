@@ -33,10 +33,10 @@ and open the template in the editor.
                     </div>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="SFactura">Registrar Factura <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="SFactura?opc=nuevo">Registrar Factura <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Lista del Registro</a>
+                    <a class="nav-link" href="SFactura">Lista del Facturas</a>
                 </li>
 
             </ul>            

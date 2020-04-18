@@ -11,7 +11,7 @@
             <h3>Editar Cliente</h3>
             <hr />
 
-            <form action="SCliente" method="post">
+            <form action="SCliente" method="post"
                 <%
                     Clientes obj = (Clientes)request.getAttribute("objCliente");
                 %>
